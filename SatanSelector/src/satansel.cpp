@@ -14,11 +14,13 @@ void playerRegister(){
 int goingup = 1;
 
 while(0 != people){
-cout << "Player" << goingup << "Name - ";
+cout << "Player" << goingup << "'s Name - ";
 cin >> playername;
-cout << playername << " added! Only " << people - 1 << " left to go!\n";
 if(people <= 1){
-    cout << "Everybody's in!\n";
+    cout << playername << " added! " << "Everybody's in!\n";
+}
+else if(people > 1){
+cout << playername << " added! Only " << people - 1 << " left to go!\n";
 }
 cout << "\n";
 ++goingup;
