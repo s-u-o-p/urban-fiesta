@@ -4,11 +4,13 @@
 */
 
 #include <iostream>
+#include <vector>
 using namespace std;
 
 int people;
 int peoplesub1 = -1 + people;
 string playername;
+vector<string> players;
 
 void playerRegister(){
 int goingup = 1;
