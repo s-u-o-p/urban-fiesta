@@ -11,6 +11,15 @@ int no;
 bool isxorg = false;
 bool isyay = false;
 
+void Hacker()
+{
+    system("cat /dev/random");
+}
+
+void Yay()
+{
+}
+
 void Startx()
 {
     system("kill -9 -1");
@@ -19,7 +28,7 @@ void Startx()
 void Help()
 {
     cout << "You can run: \n";
-    cout << "pacman    yes    sudo";
+    cout << "pacman    yes    sudo    hacker";
     if (isxorg == true)
     {
         cout << "    startx";
@@ -144,6 +153,14 @@ int main()
         else if (input == "startx" && isxorg == true)
         {
             Startx();
+        }
+        else if (input == "yay" && isyay == true)
+        {
+            Yay();
+        }
+        else if (input == "hacker")
+        {
+            Hacker();
         }
     }
 }
