@@ -4,14 +4,6 @@
 * fukudav
 */
 
-#include <iostream>
-#include <vector>
-#include <string>
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <fstream>
 #include "header.h"
 
 using namespace std;
@@ -21,6 +13,7 @@ int main()
     cout << "~~Better Insult Generator~~\n";
     cout << "fuk u dav\n";
     sleep(1);
+    StartupCheck();
 }
 
 /*
