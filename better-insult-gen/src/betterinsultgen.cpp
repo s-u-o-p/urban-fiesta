@@ -10,8 +10,9 @@ using namespace std;
 
 int main()
 {
-    cout << "~~Better Insult Generator~~\n";
-    cout << "fuk u dav\n";
+    cout << "~~Better Insult Generator~~\n"; //piss
+    cout << "fuk u dav\n"; //u huh fuck you dave suck my dick you litle piece of shit i fucking hate you and your dumb programs more than words could describe.
     sleep(1);
-    StartupCheck();
+    StartupCheck(); //Goes to StartupCheck
+    
 }
