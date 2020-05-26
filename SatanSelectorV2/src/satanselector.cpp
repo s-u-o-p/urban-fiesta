@@ -11,6 +11,7 @@
 #include <time.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <conio.h>
 
 using namespace std;
 
@@ -29,6 +30,8 @@ void Randomise()
     cout << "Randomising...\n";
     sleep(1);
     cout << satan_runners[RN] << " is todays winner to be Satan!\n";
+    cout << "Press any key to close the program. Thanks for using Satan Selector!";
+    getch();
 }
 
 void AddPlayers()
