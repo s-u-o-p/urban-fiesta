@@ -13,6 +13,7 @@
 int StartupCheck();
 int main();
 int badwordsvector();
-int the_meat();
+void the_meat();
+void badwordsrandomchoice();
 
 #endif
