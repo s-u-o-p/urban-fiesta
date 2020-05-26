@@ -15,24 +15,3 @@ int main()
     sleep(1);
     StartupCheck();
 }
-
-/*
-int NoI; //Number of insults
-
-int main()
-{
-    cout << "~~Better Insult Gen~~\n";
-    cout << "  fuk u dav  \n";
-    cout << "How many insults would you like to generate? - ";
-    cin >> NoI;
-
-    string text_reader;
-    ifstream infile;
-    infile.open("/badwords.txt");
-    while (!infile.eof) // Get all lines
-    {
-        getline(infile, text_reader); // Saves the line in STRING
-        cout << text_reader;          // Prints our STRING
-    }
-}
-*/

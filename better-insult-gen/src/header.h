@@ -8,7 +8,10 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <fstream>
+#include <conio.h>
 
 int StartupCheck();
+int main();
+int badwordsvector();
 
 #endif
