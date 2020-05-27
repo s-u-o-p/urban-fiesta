@@ -4,13 +4,13 @@
 
 using namespace std;
 
-void badwords_new()
+void badwords_new() //Make a new badwords.txt from user input
 {
     cout << "When you wish to stop adding words, please type 'X'";
-    getch();
+    
 }
 
-void badwords_add()
+void badwords_add() //Add to the current
 {
             fstream badwords_text ("badwords.txt");
             string badwords_string;
@@ -35,6 +35,7 @@ int BWcreate()
     else
     {
         string create_badwords;
+        cout << "\n";
         cout << "I couldn't find badwords.txt, is it in the same directory that I'm in?\n";
         cout << "If you wish, you can create a new one now or you can restart the program\n";
         cout << "with badwords.txt in the same directory that I'm in. Alternatively, you\n";
@@ -60,17 +61,12 @@ int BWcreate()
             break;
 
             case 0:
-            cout << "Please put a badwords.txt in this directory. Press any key to close.\n";
+            cout << "\n" << "Please put a badwords.txt in this directory. Press any key to close.\n";
             getch();
             return 0;
             break;
-
-            default :
-            cout << "please input eithe y or n.";
-            goto create_badwords_yn;
         }
     }
-    
     
 
     /*if (badwords) {
