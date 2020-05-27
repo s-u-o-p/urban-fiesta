@@ -9,11 +9,15 @@
 #include <unistd.h>
 #include <fstream>
 #include <conio.h>
+#include <Windows.h>
 
 //Sexy header 
 
 int BWcreate();
-int StartupCheck();
+void StartupCheck();
 int main();
+void badwords_add();
+void badwords_new();
+
 
 #endif

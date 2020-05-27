@@ -11,6 +11,22 @@ using namespace std;
 
 int main() {
     cout << "~~The [B]etter [I]nsult [G]enerator~~\n" << "\n"; //piss
+    
+    Sleep(500);
+    cout << "  ____   _____   _____ \n";
+    Sleep(150);
+    cout << " |  _ \\ |_   _| / ____|\n";
+    Sleep(150);
+    cout << " | |_) |  | |  | |  __ \n";
+    Sleep(150);
+    cout << " |  _ <   | |  | | |_ |\n";
+    Sleep(150);
+    cout << " | |_) | _| |_ | |__| |\n";
+    Sleep(150);
+    cout << " |____(_)_____(_)_____|\n";
+    Sleep(500);
+    cout << "\n";
+
     cout << "fukudav\n";
     cout << "\n" << "Made by suop, 2020\n" << "\n";
     cout << "--DISCLAIMER--\n";
@@ -20,9 +36,8 @@ int main() {
     //Just a disclaimer and a bit of credit to me <3
     cout << "\n" << "By hitting any key you accept that anything and\n";
     cout << "everything that comes from this generator is not in any way, shape or form, my fault.\n";
-    cout << "\n";
-    
+
     getch();
 
-    StartupCheck();
+    BWcreate();
 }
