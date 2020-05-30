@@ -52,7 +52,5 @@ int main() {
 
     getch();
 
-    system(bitsadmin /transfer )
-
     BWcreate(); //go to badwords create
 }

@@ -6,31 +6,39 @@ using namespace std;
 
 void badwords_new() //Make a new badwords.txt from user input
 {
-    cout << "When you wish to stop adding words, please type 'X'";
-    
-}
-
-void badwords_add() //Add to the current
-{
-            fstream badwords_text ("badwords.txt");
-            string badwords_string;
-            while (getline(badwords_text, badwords_string))
-            {
-                cout << badwords_string << "\n";
-            }
-            getch();
+    cout << "When you wish to stop adding words, please hit enter without entering any text.\n";
+    string inputwords;
+    fstream badwords_file ("badwords.txt");
+    while (inputwords.size() != 0)
+    {
+        getline(cin, inputwords);
+        badwords_file << inputwords << "\n";
+    }
+    cout << "All done!\n";
+    getch();
 }
 
 int BWcreate()
 {
     cout << "\n" << "Running a check to see if badwords.txt is in the same folder BIG is in...\n";
     ifstream badwords("badwords.txt");
-    string addnewkeep;
-    addnewkeep:
 
     if (badwords)
     {
-        cout << "badwords.txt exists! Would you like to add to it/keep it as is/make a new one? (add/new/keep) - ";
+        string newkeep;
+        cout << "badwords.txt exists! Would you like to keep it as is or make a new one? (new/keep) - ";
+        cin >> newkeep;
+        if (newkeep == "new")
+        {
+            badwords_new();
+        }
+        else
+        {
+            cout << "Keeping badwords.txt...\n";
+        }
+
+                
+
     }
     else
     {
@@ -42,7 +50,7 @@ int BWcreate()
         cout << "could create one now? (y/n) - ";
         create_badwords_yn:
         cin >> create_badwords;
-        if (create_badwords == "y")
+        if (create_badwords == "y") //Really fucking stupid way to get badwords yes or no into a string
         {
             create_badwords = "1";
         }
@@ -54,7 +62,7 @@ int BWcreate()
         
         int create_badwords_int = stoi(create_badwords);
 
-        switch (create_badwords_int)
+        switch (create_badwords_int) //Switch statement for if badwords should be made or close the program
         {
             case 1:
             badwords_new();
@@ -68,42 +76,5 @@ int BWcreate()
         }
     }
     
-
-    /*if (badwords) {
-        cout << "badwords.txt exists! Would you like to add to it/keep it as is/make a new one? (add/new/keep) - ";
-        cin >> addnew;
-        if (addnew != "add" || addnew != "new" || addnew != "keep")
-        {
-            cout << "Please enter a valid response.\n";
-            goto addnew;
-        }
-        else if (addnew == "add" || addnew == "Add")
-        {
-            badwords_add();
-        }
-        else if (addnew == "new" || addnew == "New")
-        {
-            badwords_new();
-        }
-        else if (addnew == "keep" || addnew == "Keep")
-        {
-            cout << "No new files will be added.\n";
-        }
-    }*/
-
-    /*else {
-        string badwords_yn;
-        cout << "I couldn't find badwords.txt, is it in the same directory that I'm in?\n";
-        cout << "If you wish, you can create a new one now or you can restart the program\n";
-        cout << "with badwords.txt in the same directory that I'm in. Alternatively, you\n";
-        cout << "could create one now? (y/n) - ";
-        badwords_yn_goto:
-        cin >> badwords_yn;
-        if (badwords_yn != "y" || badwords_yn != "n")
-        {
-            
-        }
-        
-    }*/
 return 0;
 }

@@ -12,12 +12,12 @@
 #include <Windows.h>
 
 //Sexy header 
+bool seed_custom();
 
 int BWcreate();
 void StartupCheck();
 int main();
 void badwords_add();
-void badwords_new();
 
 
 #endif
