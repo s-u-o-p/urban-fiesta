@@ -14,10 +14,8 @@
 //Sexy header 
 bool seed_custom();
 
-int BWcreate();
-void StartupCheck();
+int BW_check();
 int main();
-void badwords_add();
-
+int bw_insult();
 
 #endif

@@ -44,7 +44,7 @@ int main() {
     cout << "\n" << "Made by suop, 2020\n" << "\n";
     cout << "--DISCLAIMER--\n";
     cout << "This will almost certainly be very offensive, sexist, racist etc.\n";
-    cout << "I did not make the insult list itself, and I have not read everything it contains,\n";
+    cout << "I did not make the default insult list itself, and I have not read everything it contains,\n";
     cout << "so if it's incredibly offensive, uhh, it's dave's fault kthxbye <3\n";
     //Just a disclaimer and a bit of credit to me <3
     cout << "\n" << "By hitting any key you accept that anything and\n";
@@ -52,5 +52,5 @@ int main() {
 
     getch();
 
-    BWcreate(); //go to badwords create
+    BW_check(); //go to badwords check
 }
