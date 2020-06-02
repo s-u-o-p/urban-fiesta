@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int BW_check()
+void BW_check()
 {
     cout << "\n" << "Running a check to see if badwords.txt is in the same folder BIG is in...\n";
     ifstream badwords("badwords.txt");
@@ -23,5 +23,4 @@ int BW_check()
         cout << "Please restart the program with badwords.txt in the same directory that I'm in.\n";
         getch();
     }
-return 0;
 }

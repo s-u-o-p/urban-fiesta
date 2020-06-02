@@ -12,10 +12,11 @@
 #include <Windows.h>
 
 //Sexy header 
-bool seed_custom();
 
-int BW_check();
 int main();
-int bw_insult();
+void BW_check();
+void bw_insult();
+void bw_apply_rng();
+void bw_insult_gen();
 
 #endif

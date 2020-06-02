@@ -13,31 +13,18 @@ int main() {
     cout << "~~The [B]etter [I]nsult [G]enerator~~\n" << "\n"; //BIG
     cout << "~~[C]oded [O]n [C]++ [K]DE~~\n"; //COCK
     
-    Sleep(500);
     cout << "  ____   _____   _____ \n"; //BIG
-    Sleep(150);
     cout << " |  _ \\ |_   _| / ____|\n";
-    Sleep(150);
     cout << " | |_) |  | |  | |  __ \n";
-    Sleep(150);
     cout << " |  _ <   | |  | | |_ |\n";
-    Sleep(150);
     cout << " | |_) | _| |_ | |__| |\n";
-    Sleep(150);
     cout << " |____(_)_____(_)_____|\n";
-    Sleep(150);
     cout << "   _____   ____   _____   _  __\n"; //COCK
-    Sleep(150);
     cout << "  / ____| / __ \\ / ____| | |/ /\n";
-    Sleep(150);
     cout << " | |     | |  | | |      | ' / \n";
-    Sleep(150);
     cout << " | |     | |  | | |      |  <  \n";
-    Sleep(150);
     cout << " | |____ | |__| | |____ _| . \\ \n";
-    Sleep(150);
     cout << "  \\_____(_)____(_)_____(_)_|\\_\\ \n";
-    Sleep(150);
     cout << "\n"; //Find a way to make Sleep() on unix systems (or don't c;)
 
     cout << "fukudav\n";
