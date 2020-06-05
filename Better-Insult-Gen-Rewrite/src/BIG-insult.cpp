@@ -63,6 +63,6 @@ void bw_apply_rng()
 void bw_insult_gen()
 {
 
-
+     
 
 }
